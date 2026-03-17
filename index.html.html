@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover" />
+  <title>Gurukul Classes Paliganj – Bihar Board Solutions for All Classes</title>
+  <meta name="description" content="Get the Latest Bihar Board Text Book Solutions for Class 1 to 12 – Gurukul Classes Paliganj, led by Chandan Sir. Hindi & English Medium." />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="Bihar Board Solutions, BSEB Solutions, Class 10 Bihar Board, Class 12 Bihar Board, Gurukul Classes Paliganj, Bihar Board Objective Questions, Bihar Board Model Papers">
+  <meta name="author" content="Gurukul Classes Paliganj">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0D1B3E">
+  <meta property="og:title" content="Gurukul Classes Paliganj – Bihar Board Solutions">
+  <meta property="og:description" content="Complete Bihar Board Solutions Class 1–12, Hindi & English Medium. Expert guidance by Chandan Sir.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Gurukul.png">
+  <link rel="preload" href="Gurukul.png" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── CSS Variables ─────────────────────────────────────────── */
+    :root {
+      --saffron:   #E8651A;
+      --saffron-lt:#F5894A;
+      --saffron-dk:#C04E08;
+      --gold:      #F0B429;
+      --navy:      #0D1B3E;
+      --navy-mid:  #162550;
+      --cream:     #FDF8F2;
+      --cream-dk:  #F5EDE0;
+      --white:     #FFFFFF;
+      --text:      #1C1C2E;
+      --text-muted:#6B6B80;
+      --green:     #1A7A4A;
+      --border:    rgba(232,101,26,.18);
+      --shadow-sm: 0 2px 12px rgba(13,27,62,.08);
+      --shadow-md: 0 8px 32px rgba(13,27,62,.14);
+      --shadow-lg: 0 20px 60px rgba(13,27,62,.18);
+      --radius:    14px;
+      --transition: all .35s cubic-bezier(.4,0,.2,1);
+    }
+
+    /* ─── Reset ─────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+
+    /* ─── Utilities ─────────────────────────────────────────────── */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 80px 0; }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    .section-subtitle {
+      color: var(--text-muted);
+      margin-top: 10px;
+      font-size: 1.05rem;
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(232,101,26,.12);
+      color: var(--saffron-dk);
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      border-radius: 999px;
+      font-size: .95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: var(--saffron);
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(232,101,26,.4);
+    }
+    .btn-primary:hover {
+      background: var(--saffron-dk);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(232,101,26,.45);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--navy);
+      border: 2px solid var(--navy);
+    }
+    .btn-outline:hover {
+      background: var(--navy);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* ─── Loader ─────────────────────────────────────────────────── */
+    #loader {
+      position: fixed; inset: 0;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 9999;
+      transition: opacity .6s ease, visibility .6s ease;
+    }
+    #loader.hidden { opacity: 0; visibility: hidden; }
+    .loader-inner {
+      text-align: center;
+      animation: pulse 1.2s ease-in-out infinite;
+    }
+    .loader-inner .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--white);
+      letter-spacing: .04em;
+    }
+    .loader-inner .logo-sub {
+      color: var(--saffron);
+      font-size: .9rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .loader-bar {
+      height: 3px;
+      background: rgba(255,255,255,.15);
+      border-radius: 2px;
+      margin-top: 20px;
+      overflow: hidden;
+    }
+    .loader-bar-fill {
+      height: 100%;
+      width: 0;
+      background: var(--saffron);
+      border-radius: 2px;
+      animation: load 1.4s ease forwards;
+    }
+    @keyframes load { to { width: 100%; } }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.7} }
+
+    /* ─── Header ─────────────────────────────────────────────────── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(253,248,242,.95);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow .3s;
+    }
+    header.scrolled { box-shadow: var(--shadow-md); }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .logo-icon {
+      width: 46px; height: 46px;
+      background: var(--navy);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--gold);
+      font-weight: 900;
+      flex-shrink: 0;
+      /* Replace this div with <img> once you have a logo */
+    }
+    .logo-placeholder-text {
+      font-size: .5rem;
+      color: var(--gold);
+      opacity: .6;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      display: block;
+      margin-top: 2px;
+    }
+    .logo-name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 1.15rem;
+      color: var(--navy);
+      line-height: 1.15;
+    }
+    .logo-name span { color: var(--saffron); }
+    .logo-tagline {
+      font-size: .72rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      letter-spacing: .04em;
+    }
+    nav { display: flex; align-items: center; gap: 4px; }
+    nav a {
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+    nav a:hover { background: var(--cream-dk); color: var(--navy); }
+    nav a.active { color: var(--saffron); font-weight: 600; }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 8px;
+      border: none;
+      background: transparent;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--navy);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      padding: 16px 24px;
+      gap: 4px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      display: block;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 500;
+      color: var(--text);
+      transition: var(--transition);
+    }
+    .mobile-nav a:hover { background: var(--cream); color: var(--saffron); }
+
+    /* ─── Hero ──────────────────────────────────────────────────── */
+    .hero {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+      padding: 90px 0 80px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 80% at 80% 50%, rgba(232,101,26,.18) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(240,180,41,.1) 0%, transparent 60%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      padding: 6px 16px;
+      color: var(--gold);
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .hero-badge-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+      animation: blink 1.5s ease-in-out infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--saffron);
+    }
+    .hero p {
+      color: rgba(255,255,255,.72);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+    .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-hero-primary {
+      background: var(--saffron);
+      color: var(--white);
+      box-shadow: 0 4px 24px rgba(232,101,26,.5);
+      padding: 14px 30px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+    }
+    .btn-hero-primary:hover {
+      background: var(--saffron-lt);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(232,101,26,.55);
+    }
+    .btn-hero-secondary {
+      background: rgba(255,255,255,.1);
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,.2);
+      padding: 14px 30px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+    }
+    .btn-hero-secondary:hover {
+      background: rgba(255,255,255,.18);
+      transform: translateY(-2px);
+    }
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 48px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      border-left: 2px solid rgba(255,255,255,.15);
+      padding-left: 16px;
+    }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: .78rem;
+      color: rgba(255,255,255,.55);
+      margin-top: 4px;
+      letter-spacing: .03em;
+    }
+    /* Hero Visual */
+    .hero-visual {
+      position: relative;
+    }
+    .hero-card-main {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 20px;
+      padding: 30px;
+      backdrop-filter: blur(12px);
+    }
+    .hc-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .hc-avatar {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--saffron), var(--gold));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .hc-name { font-weight: 700; color: var(--white); font-size: .95rem; }
+    .hc-role { font-size: .75rem; color: rgba(255,255,255,.5); }
+    .hc-subjects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .hc-chip {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: .78rem;
+      color: rgba(255,255,255,.8);
+      font-weight: 500;
+    }
+    .hc-chip.highlight {
+      background: rgba(232,101,26,.25);
+      border-color: rgba(232,101,26,.35);
+      color: var(--saffron-lt);
+    }
+    .hc-progress-wrap { margin-top: 8px; }
+    .hc-prog-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: .75rem;
+      color: rgba(255,255,255,.55);
+      margin-bottom: 6px;
+    }
+    .hc-prog {
+      height: 5px;
+      background: rgba(255,255,255,.1);
+      border-radius: 3px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .hc-prog-fill {
+      height: 100%;
+      border-radius: 3px;
+      background: linear-gradient(90deg, var(--saffron), var(--gold));
+      animation: grow 1.5s ease forwards;
+      width: 0;
+    }
+    @keyframes grow { to { width: var(--w); } }
+    .float-badge {
+      position: absolute;
+      background: var(--white);
+      border-radius: 14px;
+      padding: 10px 16px;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--navy);
+      animation: float 3s ease-in-out infinite;
+    }
+    .float-badge-icon { font-size: 1.2rem; }
+    @keyframes float {
+      0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)}
+    }
+    .fb1 { top: -18px; right: 20px; animation-delay: 0s; }
+    .fb2 { bottom: -18px; left: 10px; animation-delay: 1.2s; }
+
+    /* ─── Features Strip ─────────────────────────────────────────── */
+    .features-strip {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      divide: var(--border);
+    }
+    .feat-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 28px 24px;
+      border-right: 1px solid var(--border);
+      transition: var(--transition);
+    }
+    .feat-item:last-child { border-right: none; }
+    .feat-item:hover { background: var(--cream); }
+    .feat-icon {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .feat-icon.orange { background: rgba(232,101,26,.12); }
+    .feat-icon.blue   { background: rgba(13,27,62,.08); }
+    .feat-icon.green  { background: rgba(26,122,74,.1); }
+    .feat-icon.gold   { background: rgba(240,180,41,.12); }
+    .feat-label { font-size: .85rem; color: var(--text-muted); }
+    .feat-value { font-size: .95rem; font-weight: 700; color: var(--navy); }
+
+    /* ─── Classes Section ─────────────────────────────────────────── */
+    .classes-section { background: var(--cream); }
+    .classes-intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .class-group { margin-bottom: 52px; }
+    .class-group-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .class-group-title span {
+      font-size: .72rem;
+      background: var(--saffron);
+      color: var(--white);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      letter-spacing: .04em;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .class-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: var(--transition);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .class-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: var(--saffron);
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: var(--transition);
+    }
+    .class-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+      border-color: rgba(232,101,26,.25);
+    }
+    .class-card:hover::before { transform: scaleY(1); }
+    .card-class {
+      font-size: .72rem;
+      font-weight: 700;
+      color: var(--saffron);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 8px;
+    }
+    .card-title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--navy);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .card-subjects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 10px;
+    }
+    .card-sub {
+      font-size: .68rem;
+      background: var(--cream);
+      color: var(--text-muted);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-weight: 500;
+    }
+    .card-arrow {
+      position: absolute;
+      top: 18px; right: 18px;
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--cream);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .85rem;
+      color: var(--saffron);
+      transition: var(--transition);
+    }
+    .class-card:hover .card-arrow {
+      background: var(--saffron);
+      color: var(--white);
+    }
+
+    /* Subject Links List */
+    .subject-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 10px;
+    }
+    .subject-link-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      transition: var(--transition);
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--navy);
+    }
+    .subject-link-item:hover {
+      border-color: var(--saffron);
+      color: var(--saffron);
+      box-shadow: var(--shadow-sm);
+      transform: translateX(4px);
+    }
+    .subject-link-item .sl-icon {
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      background: var(--cream);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .sl-arrow { margin-left: auto; font-size: .8rem; color: var(--text-muted); transition: var(--transition); }
+    .subject-link-item:hover .sl-arrow { color: var(--saffron); transform: translateX(4px); }
+
+    /* ─── Why Us ─────────────────────────────────────────────────── */
+    .why-section {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+    .why-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 50% 80% at 90% 50%, rgba(232,101,26,.12) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 5% 20%, rgba(240,180,41,.07) 0%, transparent 60%);
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .why-content .section-title { color: var(--white); }
+    .why-content .section-subtitle { color: rgba(255,255,255,.6); }
+    .why-list { margin-top: 36px; display: flex; flex-direction: column; gap: 20px; }
+    .why-item {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .why-icon {
+      width: 46px; height: 46px;
+      border-radius: 12px;
+      background: rgba(232,101,26,.2);
+      border: 1px solid rgba(232,101,26,.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .why-item-title { font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .why-item-desc { font-size: .88rem; color: rgba(255,255,255,.55); line-height: 1.65; }
+    .why-visual { position: relative; }
+    .info-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 20px;
+      padding: 28px;
+      backdrop-filter: blur(10px);
+    }
+    .info-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--white);
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .info-row:last-child { border-bottom: none; }
+    .info-row-icon { font-size: 1.1rem; margin-top: 2px; flex-shrink: 0; }
+    .info-row-label { font-size: .75rem; color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: .06em; }
+    .info-row-value { font-size: .92rem; color: var(--white); font-weight: 500; margin-top: 2px; }
+    .info-row-value a { color: var(--saffron-lt); }
+    .info-row-value a:hover { color: var(--gold); }
+
+    /* ─── Testimonials ───────────────────────────────────────────── */
+    .testimonials-section { background: var(--cream-dk); }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .testi-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: var(--transition);
+    }
+    .testi-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+    .testi-stars { color: var(--gold); font-size: 1rem; letter-spacing: 2px; margin-bottom: 14px; }
+    .testi-text {
+      font-size: .92rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .testi-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--saffron), var(--gold));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      color: var(--white);
+      font-size: .9rem;
+      flex-shrink: 0;
+    }
+    .testi-name { font-weight: 700; font-size: .9rem; color: var(--navy); }
+    .testi-class { font-size: .75rem; color: var(--text-muted); }
+
+    /* ─── Footer ─────────────────────────────────────────────────── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,.7);
+      position: relative;
+      overflow: hidden;
+    }
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--saffron), var(--gold), var(--saffron));
+    }
+    .footer-top {
+      padding: 60px 0 48px;
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 48px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .footer-brand .logo-icon-footer {
+      width: 50px; height: 50px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.08);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--gold);
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+    .footer-brand-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .footer-brand-name span { color: var(--saffron); }
+    .footer-brand-sub { font-size: .78rem; color: rgba(255,255,255,.4); letter-spacing: .05em; margin-bottom: 16px; }
+    .footer-brand-desc { font-size: .85rem; line-height: 1.75; color: rgba(255,255,255,.5); max-width: 260px; }
+    .footer-col-title {
+      font-weight: 700;
+      font-size: .85rem;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 18px;
+    }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a {
+      font-size: .85rem;
+      color: rgba(255,255,255,.5);
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .footer-links a:hover { color: var(--saffron-lt); transform: translateX(4px); }
+    .footer-links a::before { content: '→'; font-size: .7rem; }
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .fci-icon {
+      font-size: 1rem;
+      margin-top: 2px;
+      color: var(--saffron);
+      flex-shrink: 0;
+    }
+    .fci-label { font-size: .72rem; color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: .06em; }
+    .fci-value { font-size: .88rem; color: rgba(255,255,255,.8); font-weight: 500; margin-top: 2px; }
+    .fci-value a { color: var(--saffron-lt); }
+    .fci-value a:hover { color: var(--gold); }
+    .footer-bottom {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: .8rem; color: rgba(255,255,255,.35); }
+    .footer-bottom span { color: var(--saffron); }
+    .map-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .78rem;
+      color: rgba(255,255,255,.4);
+      transition: var(--transition);
+    }
+    .map-link:hover { color: var(--saffron-lt); }
+
+    /* ─── Back to Top ─────────────────────────────────────────────── */
+    #btt {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--saffron);
+      color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 20px rgba(232,101,26,.45);
+      cursor: pointer;
+      border: none;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: var(--transition);
+      z-index: 50;
+    }
+    #btt.visible { opacity: 1; transform: translateY(0); }
+    #btt:hover { background: var(--saffron-dk); transform: translateY(-3px); }
+
+    /* ─── Scroll Animations ──────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+
+    /* ─── Responsive ─────────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero-visual { display: none; }
+      .why-grid { grid-template-columns: 1fr; gap: 48px; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; }
+    }
+    @media (max-width: 768px) {
+      .section { padding: 60px 0; }
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .features-grid { grid-template-columns: 1fr 1fr; }
+      .feat-item:nth-child(2) { border-right: none; }
+      .feat-item:nth-child(3) { border-right: 1px solid var(--border); }
+      .feat-item:nth-child(4) { border-right: none; }
+      .feat-item:nth-child(3), .feat-item:nth-child(4) { border-top: 1px solid var(--border); }
+      .testi-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+      .hero-stats { gap: 20px; }
+    }
+    @media (max-width: 480px) {
+      .features-grid { grid-template-columns: 1fr; }
+      .feat-item { border-right: none; border-bottom: 1px solid var(--border); }
+      .feat-item:last-child { border-bottom: none; }
+      .cards-grid { grid-template-columns: 1fr 1fr; }
+      /* Mobile hero text fix */
+      .hero h1 { font-size: 1.8rem; }
+      .hero p { font-size: .95rem; }
+      .hero-cta { flex-direction: column; }
+      .btn-hero-primary, .btn-hero-secondary { justify-content: center; }
+      .stat-num { font-size: 1.5rem; }
+      .hero-stats { gap: 16px; }
+      .class-group-title { font-size: 1.1rem; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    /* ─── Improved Card Hover Animations ────────────────────────── */
+    .class-card {
+      transition: all .35s ease;
+    }
+    .class-card:hover {
+      transform: translateY(-6px) scale(1.02);
+    }
+    .subject-link-item {
+      transition: all .25s ease;
+    }
+
+    /* ─── Extra UI Polish ────────────────────────────────────────── */
+    .subject-link-item:hover .sl-icon {
+      background: rgba(232,101,26,.15);
+      transform: scale(1.1);
+      transition: all .25s ease;
+    }
+    .class-group-title {
+      position: relative;
+    }
+    .feat-item {
+      cursor: default;
+    }
+    .feat-icon {
+      transition: transform .3s ease;
+    }
+    .feat-item:hover .feat-icon {
+      transform: scale(1.12) rotate(-4deg);
+    }
+    /* Smooth section divider */
+    .class-group {
+      position: relative;
+      padding-bottom: 8px;
+    }
+    .why-item:hover .why-icon {
+      transform: scale(1.1);
+      transition: transform .3s ease;
+    }
+    /* Better focus styles for accessibility */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--saffron);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    /* Testi card subtle left border on hover */
+    .testi-card {
+      border-left: 3px solid transparent;
+      transition: all .35s ease, border-color .35s ease;
+    }
+    .testi-card:hover {
+      border-left-color: var(--saffron);
+    }
+  </style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="logo-text">Gurukul Classes</div>
+    <div class="logo-sub">Paliganj</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <img src="Gurukul.png" alt="Gurukul Classes Logo" style="width:46px;height:46px;border-radius:10px;object-fit:cover;flex-shrink:0;">
+        <div>
+          <div class="logo-name">GURUKUL <span>CLASSES</span></div>
+          <div class="logo-tagline">Paliganj, Patna</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#home">🏠 Home</a>
+    <a href="#classes">📚 Classes</a>
+    <a href="#about">⭐ About</a>
+    <a href="#contact">📞 Contact</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Bihar Board Specialist · Est. Paliganj
+        </div>
+        <h1>Bihar Board Solutions for <em>Every</em> Class & Subject</h1>
+        <p>Expert guidance from Chandan Sir at Gurukul Classes Paliganj. Complete solutions in Hindi & English medium for Classes 1 to 12 — making learning simple and effective.</p>
+        <div class="hero-cta">
+          <a href="#classes" class="btn-hero-primary">📚 Explore Solutions ↓</a>
+          <a href="#contact" class="btn-hero-secondary">📞 Contact Us</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num">12+</div>
+            <div class="stat-label">Classes Covered</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Free Solutions</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2025–26</div>
+            <div class="stat-label">Latest Edition</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="float-badge fb1">
+          <span class="float-badge-icon">🏆</span>
+          <div>
+            <div style="font-size:.75rem;color:var(--text-muted)">Top Results</div>
+            <div>Bihar Board 2024</div>
+          </div>
+        </div>
+        <div class="hero-card-main">
+          <div class="hc-header">
+            <div class="hc-avatar">CS</div>
+            <div>
+              <div class="hc-name">Chandan Sir</div>
+              <div class="hc-role">Expert Educator · Gurukul Classes</div>
+            </div>
+          </div>
+          <div class="hc-subjects">
+            <span class="hc-chip highlight">Mathematics</span>
+            <span class="hc-chip highlight">Science</span>
+            <span class="hc-chip">Hindi</span>
+            <span class="hc-chip">English</span>
+            <span class="hc-chip">Social Science</span>
+            <span class="hc-chip">Sanskrit</span>
+          </div>
+          <div class="hc-progress-wrap">
+            <div class="hc-prog-label"><span>Class 10 Coverage</span><span>95%</span></div>
+            <div class="hc-prog"><div class="hc-prog-fill" style="--w:95%"></div></div>
+            <div class="hc-prog-label"><span>Class 12 Coverage</span><span>88%</span></div>
+            <div class="hc-prog"><div class="hc-prog-fill" style="--w:88%"></div></div>
+            <div class="hc-prog-label"><span>Class 6–9 Coverage</span><span>100%</span></div>
+            <div class="hc-prog"><div class="hc-prog-fill" style="--w:100%"></div></div>
+          </div>
+        </div>
+        <div class="float-badge fb2">
+          <span class="float-badge-icon">📱</span>
+          <div>
+            <div style="font-size:.75rem;color:var(--text-muted)">Available on</div>
+            <div>Mobile & Desktop</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES STRIP -->
+<div class="features-strip">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feat-item reveal">
+        <div class="feat-icon orange">📖</div>
+        <div>
+          <div class="feat-value">Hindi & English</div>
+          <div class="feat-label">Both mediums available</div>
+        </div>
+      </div>
+      <div class="feat-item reveal reveal-delay-1">
+        <div class="feat-icon blue">🎯</div>
+        <div>
+          <div class="feat-value">Expert Solutions</div>
+          <div class="feat-label">By qualified teachers</div>
+        </div>
+      </div>
+      <div class="feat-item reveal reveal-delay-2">
+        <div class="feat-icon green">✅</div>
+        <div>
+          <div class="feat-value">BSEB Syllabus</div>
+          <div class="feat-label">2025-2026 updated</div>
+        </div>
+      </div>
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CLASSES SECTION -->
+<section class="section classes-section" id="classes">
+  <div class="container">
+    <div class="classes-intro">
+      <div>
+        <div class="tag">All Classes</div>
+        <h2 class="section-title reveal">Bihar Board Solutions by Class</h2>
+        <p class="section-subtitle reveal reveal-delay-1">Complete chapter-wise solutions for all subjects — Class 1 to 12.</p>
+      </div>
+    </div>
+
+    <!-- CLASS 12 -->
+    <div class="class-group reveal">
+      <div class="class-group-title">🎓 Class 12th Solutions <span>Senior Secondary</span></div>
+      <div class="subject-links">
+        <a href="https://bsebsolutions.com/bihar-board-class-12th-solutions/" class="subject-link-item"><span class="sl-icon">📚</span>Bihar Board Class 12th Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-12th-english-book-solutions/" class="subject-link-item"><span class="sl-icon">📝</span>Class 12th English Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-12th-hindi-book-solutions/" class="subject-link-item"><span class="sl-icon">📖</span>Class 12th Hindi Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-12-physics-solutions/" class="subject-link-item"><span class="sl-icon">⚡</span>Class 12th Physics Solutions (भौतिक विज्ञान)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-12-chemistry-solutions/" class="subject-link-item"><span class="sl-icon">🧪</span>Class 12th Chemistry Solutions (रसायन विज्ञान)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-12-biology-solutions/" class="subject-link-item"><span class="sl-icon">🌱</span>Class 12th Biology Solutions (जीव विज्ञान)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-12-geography-solutions/" class="subject-link-item"><span class="sl-icon">🌍</span>Class 12th Geography Solutions (भूगोल)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-12-history-solutions/" class="subject-link-item"><span class="sl-icon">🏛</span>Class 12th History Solutions (इतिहास)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-12-political-science-solutions/" class="subject-link-item"><span class="sl-icon">⚖️</span>Class 12th Political Science (राजनीति शास्त्र)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-12-economics-solutions/" class="subject-link-item"><span class="sl-icon">📊</span>Class 12th Economics Solutions (अर्थशास्त्र)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-12-psychology-solutions/" class="subject-link-item"><span class="sl-icon">🧠</span>Class 12th Psychology Solutions (मनोविज्ञान)<span class="sl-arrow">→</span></a>
+      </div>
+      <!-- 12th Important Questions -->
+      <div style="margin-top:20px;">
+        <div class="class-group-title" style="font-size:1rem;margin-bottom:14px;">📋 Class 12th Important Questions</div>
+        <div class="subject-links">
+          <a href="https://bsebsolutions.com/bihar-board-12th-maths-important-questions/" class="subject-link-item"><span class="sl-icon">📐</span>12th Maths Important Questions<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-physics-important-questions/" class="subject-link-item"><span class="sl-icon">⚡</span>12th Physics Important Questions<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-biology-important-questions/" class="subject-link-item"><span class="sl-icon">🌱</span>12th Biology Important Questions<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-sanskrit-important-questions/" class="subject-link-item"><span class="sl-icon">🕉️</span>12th Sanskrit Important Questions<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-business-studies-important-questions/" class="subject-link-item"><span class="sl-icon">💼</span>12th Business Studies Important Questions<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-entrepreneurship-important-questions/" class="subject-link-item"><span class="sl-icon">🚀</span>12th Entrepreneurship Important Questions<span class="sl-arrow">→</span></a>
+        </div>
+      </div>
+      <!-- 12th Objective Questions -->
+      <div style="margin-top:20px;">
+        <div class="class-group-title" style="font-size:1rem;margin-bottom:14px;">🎯 Class 12th Objective Questions & Answers</div>
+        <div class="subject-links">
+          <a href="https://bsebsolutions.com/bihar-board-12th-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">✅</span>12th All Subjects Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-maths-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">📐</span>12th Maths Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-physics-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">⚡</span>12th Physics Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-chemistry-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🧪</span>12th Chemistry Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-biology-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🌱</span>12th Biology Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-english-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">📝</span>12th English Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-hindi-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">📖</span>12th Hindi Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-history-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🏛️</span>12th History Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-geography-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🌍</span>12th Geography Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-economics-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">📊</span>12th Economics Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-political-science-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">⚖️</span>12th Political Science Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-accountancy-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🧾</span>12th Accountancy Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-business-studies-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">💼</span>12th Business Studies Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-sociology-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">👥</span>12th Sociology Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-psychology-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🧠</span>12th Psychology Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-philosophy-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">💭</span>12th Philosophy Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-home-science-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🏠</span>12th Home Science Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-entrepreneurship-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🚀</span>12th Entrepreneurship Objective Q&A<span class="sl-arrow">→</span></a>
+        </div>
+      </div>
+      <!-- 12th Model Papers -->
+      <div style="margin-top:20px;">
+        <div class="class-group-title" style="font-size:1rem;margin-bottom:14px;">📄 Class 12th Model Papers</div>
+        <div class="subject-links">
+          <a href="https://bsebsolutions.com/bihar-board-12th-model-papers/" class="subject-link-item"><span class="sl-icon">📄</span>12th All Model Papers<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-maths-model-papers/" class="subject-link-item"><span class="sl-icon">📐</span>12th Maths Model Papers<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-physics-model-papers/" class="subject-link-item"><span class="sl-icon">⚡</span>12th Physics Model Papers<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-chemistry-model-papers/" class="subject-link-item"><span class="sl-icon">🧪</span>12th Chemistry Model Papers<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-biology-model-papers/" class="subject-link-item"><span class="sl-icon">🌱</span>12th Biology Model Papers<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-english-model-papers/" class="subject-link-item"><span class="sl-icon">📝</span>12th English Model Papers<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-hindi-model-papers/" class="subject-link-item"><span class="sl-icon">📖</span>12th Hindi Model Papers<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-accountancy-model-papers/" class="subject-link-item"><span class="sl-icon">🧾</span>12th Accountancy Model Papers<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-economics-model-papers/" class="subject-link-item"><span class="sl-icon">📊</span>12th Economics Model Papers<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-business-studies-model-papers/" class="subject-link-item"><span class="sl-icon">💼</span>12th Business Studies Model Papers<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-12th-entrepreneurship-model-papers/" class="subject-link-item"><span class="sl-icon">🚀</span>12th Entrepreneurship Model Papers<span class="sl-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CLASS 11 -->
+    <div class="class-group reveal">
+      <div class="class-group-title">🎓 Class 11th Solutions <span>Senior Secondary</span></div>
+      <div class="subject-links">
+        <a href="https://bsebsolutions.com/bihar-board-class-11th-solutions/" class="subject-link-item"><span class="sl-icon">📚</span>Bihar Board Class 11th Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11th-english-book-solutions/" class="subject-link-item"><span class="sl-icon">📝</span>Class 11th English Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11th-hindi-book-solutions/" class="subject-link-item"><span class="sl-icon">📖</span>Class 11th Hindi Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11-physics-solutions/" class="subject-link-item"><span class="sl-icon">⚡</span>Class 11th Physics Solutions (भौतिक विज्ञान)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11-chemistry-solutions/" class="subject-link-item"><span class="sl-icon">🧪</span>Class 11th Chemistry Solutions (रसायन विज्ञान)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11-biology-solutions/" class="subject-link-item"><span class="sl-icon">🌱</span>Class 11th Biology Solutions (जीव विज्ञान)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11-geography-solutions/" class="subject-link-item"><span class="sl-icon">🌍</span>Class 11th Geography Solutions (भूगोल)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11-history-solutions/" class="subject-link-item"><span class="sl-icon">🏛️</span>Class 11th History Solutions (इतिहास)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11-political-science-solutions/" class="subject-link-item"><span class="sl-icon">⚖️</span>Class 11th Political Science (राजनीति शास्त्र)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11-economics-solutions/" class="subject-link-item"><span class="sl-icon">📊</span>Class 11th Economics Solutions (अर्थशास्त्र)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11-sociology-solutions/" class="subject-link-item"><span class="sl-icon">👥</span>Class 11th Sociology Solutions (समाजशास्‍त्र)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11-psychology-solutions/" class="subject-link-item"><span class="sl-icon">🧠</span>Class 11th Psychology Solutions (मनोविज्ञान)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11-home-science-solutions/" class="subject-link-item"><span class="sl-icon">🏠</span>Class 11th Home Science Solutions (गृह विज्ञान)<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-11th-philosophy-solutions/" class="subject-link-item"><span class="sl-icon">💭</span>Class 11th Philosophy Solutions (दर्शनशास्र)<span class="sl-arrow">→</span></a>
+      </div>
+    </div>
+
+    <!-- CLASS 10 -->
+    <div class="class-group reveal">
+      <div class="class-group-title">📘 Class 10th Solutions <span>Matric</span></div>
+      <div class="subject-links">
+        <a href="https://bsebsolutions.com/bihar-board-class-10th-solutions/" class="subject-link-item"><span class="sl-icon">📚</span>Bihar Board Class 10th Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-10th-maths-solutions/" class="subject-link-item"><span class="sl-icon">📐</span>Class 10th Maths Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-10th-science-solutions/" class="subject-link-item"><span class="sl-icon">🔬</span>Class 10th Science Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-10th-social-science-solutions/" class="subject-link-item"><span class="sl-icon">🌍</span>Class 10th Social Science Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-10th-english-book-solutions/" class="subject-link-item"><span class="sl-icon">📝</span>Class 10th English Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-10th-hindi-book-solutions/" class="subject-link-item"><span class="sl-icon">📖</span>Class 10th Hindi Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-10th-sanskrit-solutions/" class="subject-link-item"><span class="sl-icon">🕉️</span>Class 10th Sanskrit Solutions<span class="sl-arrow">→</span></a>
+      </div>
+      <!-- 10th Objective -->
+      <div style="margin-top:16px;">
+        <div class="class-group-title" style="font-size:1rem;margin-bottom:14px;">🎯 Class 10th Objective Questions & Answers</div>
+        <div class="subject-links">
+          <a href="https://bsebsolutions.com/bihar-board-10th-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">✅</span>10th All Subjects Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-10th-maths-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">📐</span>10th Maths Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-10th-science-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🔬</span>10th Science Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-10th-social-science-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🌍</span>10th Social Science Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-10th-english-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">📝</span>10th English Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-10th-hindi-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">📖</span>10th Hindi Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-10th-sanskrit-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🕉️</span>10th Sanskrit Objective Q&A<span class="sl-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CLASS 9 -->
+    <div class="class-group reveal">
+      <div class="class-group-title">📗 Class 9th Solutions</div>
+      <div class="subject-links">
+        <a href="https://bsebsolutions.com/bihar-board-class-9th-solutions/" class="subject-link-item"><span class="sl-icon">📚</span>Bihar Board Class 9th Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-9th-maths-solutions/" class="subject-link-item"><span class="sl-icon">📐</span>Class 9th Maths Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-9th-science-solutions/" class="subject-link-item"><span class="sl-icon">🔬</span>Class 9th Science Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-9th-social-science-solutions/" class="subject-link-item"><span class="sl-icon">🌍</span>Class 9th Social Science Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-9th-english-book-solutions/" class="subject-link-item"><span class="sl-icon">📝</span>Class 9th English Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-9th-hindi-solutions/" class="subject-link-item"><span class="sl-icon">📖</span>Class 9th Hindi Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-9th-sanskrit-solutions/" class="subject-link-item"><span class="sl-icon">🕉️</span>Class 9th Sanskrit Solutions<span class="sl-arrow">→</span></a>
+      </div>
+      <!-- 9th Objective -->
+      <div style="margin-top:16px;">
+        <div class="class-group-title" style="font-size:1rem;margin-bottom:14px;">🎯 Class 9th Objective Questions & Answers</div>
+        <div class="subject-links">
+          <a href="https://bsebsolutions.com/bihar-board-9th-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">✅</span>9th All Subjects Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-9th-maths-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">📐</span>9th Maths Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-9th-science-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🔬</span>9th Science Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-9th-social-science-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🌍</span>9th Social Science Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-9th-english-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">📝</span>9th English Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-9th-hindi-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">📖</span>9th Hindi Objective Q&A<span class="sl-arrow">→</span></a>
+          <a href="https://bsebsolutions.com/bihar-board-9th-sanskrit-objective-questions-and-answers/" class="subject-link-item"><span class="sl-icon">🕉️</span>9th Sanskrit Objective Q&A<span class="sl-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CLASS 8 -->
+    <div class="class-group reveal">
+      <div class="class-group-title">📙 Class 8th Solutions</div>
+      <div class="subject-links">
+        <a href="https://bsebsolutions.com/bihar-board-class-8th-solutions/" class="subject-link-item"><span class="sl-icon">📚</span>Bihar Board Class 8th Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-8th-maths-solutions/" class="subject-link-item"><span class="sl-icon">📐</span>Class 8th Maths Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-8th-science-solutions/" class="subject-link-item"><span class="sl-icon">🔬</span>Class 8th Science Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-8th-social-science-solutions/" class="subject-link-item"><span class="sl-icon">🌍</span>Class 8th Social Science Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-8th-english-book-solutions/" class="subject-link-item"><span class="sl-icon">📝</span>Class 8th English Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-8th-hindi-solutions/" class="subject-link-item"><span class="sl-icon">📖</span>Class 8th Hindi Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-8th-sanskrit-solutions/" class="subject-link-item"><span class="sl-icon">🕉️</span>Class 8th Sanskrit Solutions<span class="sl-arrow">→</span></a>
+      </div>
+    </div>
+
+    <!-- CLASS 7 -->
+    <div class="class-group reveal">
+      <div class="class-group-title">📒 Class 7th Solutions</div>
+      <div class="subject-links">
+        <a href="https://bsebsolutions.com/bihar-board-class-7th-solutions/" class="subject-link-item"><span class="sl-icon">📚</span>Bihar Board Class 7th Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-7th-maths-solutions/" class="subject-link-item"><span class="sl-icon">📐</span>Class 7th Maths Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-7th-science-solutions/" class="subject-link-item"><span class="sl-icon">🔬</span>Class 7th Science Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-7th-social-science-solutions/" class="subject-link-item"><span class="sl-icon">🌍</span>Class 7th Social Science Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-7th-english-book-solutions/" class="subject-link-item"><span class="sl-icon">📝</span>Class 7th English Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-7th-hindi-solutions/" class="subject-link-item"><span class="sl-icon">📖</span>Class 7th Hindi Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-7th-sanskrit-solutions/" class="subject-link-item"><span class="sl-icon">🕉️</span>Class 7th Sanskrit Solutions<span class="sl-arrow">→</span></a>
+      </div>
+    </div>
+
+    <!-- CLASS 6 -->
+    <div class="class-group reveal">
+      <div class="class-group-title">📓 Class 6th Solutions</div>
+      <div class="subject-links">
+        <a href="https://bsebsolutions.com/bihar-board-class-6th-solutions/" class="subject-link-item"><span class="sl-icon">📚</span>Bihar Board Class 6th Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-6th-maths-solutions/" class="subject-link-item"><span class="sl-icon">📐</span>Class 6th Maths Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-6th-science-solutions/" class="subject-link-item"><span class="sl-icon">🔬</span>Class 6th Science Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-6th-social-science-solutions/" class="subject-link-item"><span class="sl-icon">🌍</span>Class 6th Social Science Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-6th-english-book-solutions/" class="subject-link-item"><span class="sl-icon">📝</span>Class 6th English Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-6th-hindi-solutions/" class="subject-link-item"><span class="sl-icon">📖</span>Class 6th Hindi Solutions<span class="sl-arrow">→</span></a>
+        <a href="https://bsebsolutions.com/bihar-board-class-6th-sanskrit-solutions/" class="subject-link-item"><span class="sl-icon">🕉️</span>Class 6th Sanskrit Solutions<span class="sl-arrow">→</span></a>
+      </div>
+    </div>
+
+    <!-- CLASS 1-5 --> (coming soon)
+    <div class="class-group reveal">
+      <div class="class-group-title">🌟 Class 1st – 5th Solutions <span>Primary</span></div>
+      <div class="cards-grid">
+        <div class="class-card"><div class="card-arrow">→</div><div class="card-class">Class 5</div><div class="card-title">Bihar Board Class 5th Solutions</div></div>
+        <div class="class-card"><div class="card-arrow">→</div><div class="card-class">Class 4</div><div class="card-title">Bihar Board Class 4th Solutions</div></div>
+        <div class="class-card"><div class="card-arrow">→</div><div class="card-class">Class 3</div><div class="card-title">Bihar Board Class 3rd Solutions</div></div>
+        <div class="class-card"><div class="card-arrow">→</div><div class="card-class">Class 2</div><div class="card-title">Bihar Board Class 2nd Solutions</div></div>
+        <div class="class-card"><div class="card-arrow">→</div><div class="card-class">Class 1</div><div class="card-title">Bihar Board Class 1st Solutions</div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section why-section" id="about">
+  <div class="why-bg"></div>
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-content reveal">
+        <div class="tag" style="background:rgba(232,101,26,.25);color:var(--saffron-lt)">Why Gurukul Classes?</div>
+        <h2 class="section-title">Learn Smarter with Expert Bihar Board Solutions</h2>
+        <p class="section-subtitle">Trusted by students across Paliganj for comprehensive, clear, and exam-focused solutions.</p>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-icon">🎓</div>
+            <div>
+              <div class="why-item-title">Expert Teaching by Chandan Sir</div>
+              <div class="why-item-desc">All solutions prepared and verified by experienced educators following BSEB guidelines.</div>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">📋</div>
+            <div>
+            why-item-title">Bilingual Support</div>
+              <div class="why-item-desc">Solutions available in both Hindi & English medium to help every student understand better.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-visual reveal reveal-delay-2">
+          <div class="info-card">
+            <div class="info-card-title">Quick Contact Info</div>
+            <div class="info-row">
+              <div class="info-row-icon">📍</div>
+              <div>
+                <div class="info-row-label">Address</div>
+                <div class="info-row-value">Paliganj, Patna, Bihar - 801110</div>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-icon">📞</div>
+              <div>
+                <div class="info-row-label">Call Us</div>
+                <div class="info-row-value"><a href="tel:+918434671842">+91 8434671842</a></div>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-icon">✉️</div>
+              <div>
+                <div class="info-row-label">Email</div>
+                <div class="info-row-value">contact@gurukulpaliganj.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-icon-footer">G</div>
+        <div class="footer-brand-name">GURUKUL <span>CLASSES</span></div>
+        <div class="footer-brand-sub">PALIGANJ, PATNA</div>
+        <p class="footer-brand-desc">Bihar Board ke sabhi classes ke liye sabse bharosemand online aur offline solution center.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Main Classes</h4>
+        <div class="footer-links">
+          <a href="#">Class 10th Solutions</a>
+          <a href="#">Class 12th (Science)</a>
+          <a href="#">Class 12th (Arts)</a>
+          <a href="#">Objective Questions</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Resources</h4>
+        <div class="footer-links">
+          <a href="#">Model Papers</a>
+          <a href="#">Previous Year Q.</a>
+          <a href="#">Exam Tips</a>
+          <a href="#">About Chandan Sir</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gurukul Classes Paliganj. Designed for <span>INDIAN GAMING I </span>.</p>
+      <a href="#" class="map-link">📍 Locate on Map</a>
+    </div>
+  </div>
+</footer>
+
+<button id="btt" title="Back to top">↑</button>
+
+<script>
+  // 1. Loader Logic
+  window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    setTimeout(() => { loader.classList.add('hidden'); }, 800);
+  });
+
+  // 2. Header & Back to Top Scroll Logic
+  const header = document.getElementById('header');
+  const btt = document.getElementById('btt');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      header.classList.add('scrolled');
+      btt.classList.add('visible');
+    } else {
+      header.classList.remove('scrolled');
+      btt.classList.remove('visible');
+    }
+  });
+
+  // 3. Mobile Hamburger Menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+  });
+
+  // 4. Scroll Reveal (Fade-in effect)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // 5. Smooth Back to Top
+  btt.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
